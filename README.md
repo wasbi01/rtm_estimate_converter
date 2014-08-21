@@ -1,6 +1,6 @@
 # RtmEstimateConverter
 
-TODO: Write a gem description
+Simple converter for RTM's estimate time to seconds
 
 ## Installation
 
@@ -18,7 +18,19 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+§ irb
+
+require "rtm_estimate_converter"
+
+"1.5h".estimated_time
+# => 5400.0
+"1hours 30minutes".estimated_time
+# => 5400.0
+"90min".estimated_time
+# => 5400.0
+
+```
 
 ## Contributing
 
