@@ -11,6 +11,7 @@ module RtmEstimateConverter
     when "d"; :days
     when "h"; :hours
     when "m"; :minutes
+    else raise "Can not convert!"
     end
   end
 end
